@@ -11,3 +11,4 @@ void print(char name[15],char add[30],char dob[10]){
 	printf("\n\t----------------------------------------------");
 	printf("\n\t%s\t%s\t%s",name,add,dob);
 }
+    

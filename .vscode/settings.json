@@ -1,6 +1,32 @@
 {
   "files.associations": {
     "*.embeddedhtml": "html",
-    "PROG21.C": "cpp"
+    "PROG2.C": "cpp",
+    "PROG1.C": "cpp",
+    "PROG3.C": "cpp",
+    "PROG4.C": "cpp",
+    "PROG5.C": "cpp",
+    "PROG6.C": "cpp",
+    "PROG7.C": "cpp",
+    "PROG8.C": "cpp",
+    "PROG9.C": "cpp",
+    "PROG10.C": "cpp",
+    "PROG11.C": "cpp",
+    "PROG12.C": "cpp",
+    "PROG13.C": "cpp",
+    "PROG14.C": "cpp",
+    "PROG15.C": "cpp",
+    "PROG16.C": "cpp",
+    "PROG17.C": "cpp",
+    "PROG18.C": "cpp",
+    "PROG19.C": "cpp",
+    "PROG21.C": "cpp",
+    "PROG22.C": "cpp",
+    "PROG23.C": "cpp",
+    "PROG24.C": "cpp",
+    "PROG25.C": "cpp",
+    "PROG26.C": "cpp",
+    "PROG27.C": "cpp",
+    "PROG28.C": "cpp"
   }
 }
