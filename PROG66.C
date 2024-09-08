@@ -1,10 +1,24 @@
-/*
- * Program 66: Description of what this program does
- */
+//    1
+//   1 2
+//  1 2 3
+// 1 2 3 4
 
 #include <stdio.h>
 
-int main() {
-    // Your code here
+int main()
+{
+    int i, j, k;
+    for (i = 1; i <= 4; i++)
+    {
+        for (k = 4; k >= i; k--)
+        {
+            printf(" ");
+        }
+        for (j = 1; j <= i; j++)
+        {
+            printf("%d ", j);
+        }
+        printf("\n");
+    }
     return 0;
 }

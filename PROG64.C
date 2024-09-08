@@ -1,10 +1,21 @@
-/*
- * Program 64: Description of what this program does
- */
+// *
+// **
+// ***
+// ****
 
 #include <stdio.h>
 
-int main() {
-    // Your code here
+int main()
+{
+    int i, j;
+    for (i = 1; i <= 4; i++)
+    {
+        for (j = 1; j <= i; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
     return 0;
 }
+

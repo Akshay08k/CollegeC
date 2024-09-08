@@ -1,10 +1,34 @@
-/*
- * Program 81: Description of what this program does
- */
-
 #include <stdio.h>
 
-int main() {
-    // Your code here
+int main()
+{
+    int i, j, k;
+
+    for (i = 1; i <= 6; i++)
+    {
+        for (k = 6; k > i; k--)
+        {
+            printf(" ");
+        }
+        for (j = 1; j <= i; j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+    for (i = 1; i <= 5; i++)
+    {
+        for (k = 1; k <= i; k++)
+        {
+            printf(" ");
+        }
+        for (j = 5; j >= i; j--)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+
     return 0;
 }
