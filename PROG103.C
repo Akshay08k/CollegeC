@@ -1,10 +1,23 @@
-/*
- * Program 103: Description of what this program does
- */
+// 1! +2! +3! +4! +….n!
 
 #include <stdio.h>
-
-int main() {
-    // Your code here
+long int factorial(int n);
+int main()
+{
+    int n;
+    printf("Enter Number n : ");
+    scanf("%d", &n);
+    printf("factorial = %d", factorial(n));
     return 0;
+}
+long int factorial(int n)
+{
+    if (n == 1)
+    {
+        return 1;
+    }
+    else
+    {
+        return n * factorial(n - 1);
+    }
 }
