@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <conio.h>
 int Factorial(int fact);
-void main()
+int main()
 {
     int fact;
-    clrscr();
     printf("Enter the Number to print Factorial : ");
     scanf("%d", &fact);
     printf("Factorial = %d", Factorial(fact));
-    getch();
+    return 0;
 }
 int Factorial(int fact)
 {

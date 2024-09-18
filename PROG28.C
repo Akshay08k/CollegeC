@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <conio.h>
 void weeknames(int day);
-void main()
+int main()
 {
     int day;
-    clrscr();
     printf("Enter the Number of Day : ");
     scanf("%d", &day);
     weeknames(day);
-    getch();
+    return 0;
 }
 void weeknames(int day)
 {

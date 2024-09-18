@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <conio.h>
 void findLeapYear(int year);
-void main()
+int main()
 {
     int year;
-    clrscr();
     printf("Enter the year : ");
     scanf("%d", &year);
     findLeapYear(year);
-    getch();
+    return 0;
 }
 void findLearYear(int year)
 {

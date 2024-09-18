@@ -5,15 +5,15 @@
 float calculateVolume(float r);
 float calculateSurfaceArea(float r);
 
-void main()
+int main()
 {
     float r;
-    clrscr();
+
     printf("Enter the radius of the sphere: ");
     scanf("%f", &r);
     printf("Volume of the sphere: %.2f\n", calculateVolume(r));
     printf("Surface area of the sphere: %.2f\n", calculateSurfaceArea(r));
-    getch();
+    return 0;
 }
 
 float calculateVolume(float r)

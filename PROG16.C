@@ -2,11 +2,11 @@
 #include <conio.h>
 #include <math.h>
 float calculateCompoundInterest(float principal, float rate, int time);
-void main()
+int main()
 {
     float principal, rate, compoundInterest;
     int time;
-    clrscr();
+
     printf("Enter the principal amount: ");
     scanf("%f", &principal);
     printf("Enter the annual interest rate (in percentage): ");
@@ -16,7 +16,7 @@ void main()
     scanf("%d", &time);
     compoundInterest = calculateCompoundInterest(principal, rate, time);
     printf("The compound interest is: %.2f\n", compoundInterest);
-    getch();
+    return 0;
 }
 
 float calculateCompoundInterest(float principal, float rate, int time)

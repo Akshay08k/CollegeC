@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <conio.h>
 int calculator(int a, int b, char op);
-void main()
+int main()
 {
     int a, b;
     char op;
-    clrscr();
+
     printf("Enter the Equation to calculate ex(10 + 20): ");
     scanf("%d %c %d", &a, &op, &b);
     printf("%d %c %d = %d", &a, &op, &b, calculator(a, b, op));
-    getch();
+    return 0;
 }
 int calculator(int a, int b, char op)
 {

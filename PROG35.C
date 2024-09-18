@@ -9,11 +9,10 @@
 #include <conio.h>
 #include <string.h>
 void calcGrade(int m1, int m2, int m3);
-void main()
+int main()
 {
     int m1, m2, m3, rollno;
     char name[10];
-    clrscr();
     printf("Enter the Roll NO : ");
     scanf("%d", &rollno);
     printf("Enter the name of student : ");
@@ -21,7 +20,7 @@ void main()
     printf("Enter the marks of 3 Subjects : ");
     scanf("%d %d %d", &m1, &m2, &m3);
     calcGrade(m1, m2, m3);
-    getch();
+    return 0;
 }
 void calcGrade(int rollno, char name[10], int m1, int m2, int m3)
 {

@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <conio.h>
 int sum1toN(int n);
-void main()
+int main()
 {
     int n;
-    clrscr();
     printf("Enter the n to sum 1 to N : ");
     scanf("%d", &n);
     printf("Sum of 1 TO %d", n, sum1toN(n));
-    getch();
+    return 0;
 }
 int sum1toN(int n)
 {

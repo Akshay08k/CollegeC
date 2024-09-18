@@ -1,17 +1,16 @@
 #include <stdio.h>
 #include <conio.h>
 void billGenerator(int billNo, char cmp[10], int units);
-void main()
+int main()
 {
     int billNo, units;
     char cmp[10];
-    clrscr();
     printf("Enter Billno And Company Name : ");
     scanf("%d %s", &billNo, cmp);
     printf("Enter the Units Consumed : ");
     scanf("%d", &units);
     billGenerator(billNo, cmp, units);
-    getch();
+    return 0;
 }
 
 void billGenerator(int billNo, char cmp[10], int units)

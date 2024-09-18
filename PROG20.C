@@ -3,14 +3,13 @@
 
 void convertDays(int total_days);
 
-void main()
+int main()
 {
     int total_days;
-    clrscr();
     printf("Enter the number of days: ");
     scanf("%d", &total_days);
     convertDays(total_days);
-    getch();
+    return 0;
 }
 
 void convertDays(int total_days)

@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <conio.h>
 void CheckNum(int num);
-void main()
+int main()
 {
     int num;
-    clrscr();
     printf("Enter the Number : ");
     scanf("%d", &num);
     CheckNum(num);
-    getch();
+    return 0;
 }
 void CheckNum(int num)
 {

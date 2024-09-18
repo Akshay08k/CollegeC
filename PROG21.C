@@ -1,15 +1,14 @@
 #include <stdio.h>
 #include <conio.h>
 int convertToPaisa(float Rupees);
-void main()
+int main()
 {
     float Rupees;
     int paisa;
-    clrscr();
     printf("Enter the the ruppess");
     scanf("%f", Rupees);
     printf("The Rupees in paisa = %d", convertToPaisa(Rupees));
-    getch();
+    return 0;
 }
 
 int convertToPaisa(float Rupees)

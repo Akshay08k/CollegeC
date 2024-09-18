@@ -1,10 +1,8 @@
 #include<stdio.h>
-#include<conio.h>
 void print(char text[30]);
-void main(){
-	clrscr();
+int main(){
 	print("Hello world!");
-	getch();
+	return 0;
 }
 void print(char text[30]){
 	printf("%s",text);

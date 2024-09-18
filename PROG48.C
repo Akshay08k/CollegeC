@@ -1,10 +1,8 @@
-/*
- * Program 48: Description of what this program does
- */
+// To check whether the given number is valid binary or not.
 
 #include <stdio.h>
 
-int main() {
-    // Your code here
+int main()
+{
     return 0;
 }

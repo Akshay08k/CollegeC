@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <conio.h>
 float cel_to_fah(float);
-void main()
+int main()
 {
 	float cel;
-	clrscr();
 	printf("Enter the celcius : ");
 	scanf("%f", &cel);
 	printf("The Fahrenheit is = %f", cel_to_fah(cel));
-	getch();
+	return 0;
 }
 float cel_to_fah(float cel)
 {

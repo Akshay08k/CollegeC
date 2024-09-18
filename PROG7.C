@@ -4,7 +4,6 @@ float fah_to_cel(float fah);
 void main()
 {
 	float fah;
-	clrscr();
 	printf("Enter the fahrenheit : ");
 	scanf("%f", &fah);
 	printf("\n\tcelcius = %f", fah_to_cel(fah));

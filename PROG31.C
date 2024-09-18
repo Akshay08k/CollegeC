@@ -3,17 +3,16 @@
 #include <stdio.h>
 #include <conio.h>
 void isEligible(char name[20], int phy, int chem, int Math);
-void main()
+int main()
 {
     char name[20];
     int phy, chem, Math;
-    clrscr();
     printf("Enter the Name Of Student : ");
     scanf("%s", name);
     printf("Enter the Marks Of (Phy Chem Maths) : ");
     scanf("%d %d %d", &phy, &chem, &Math);
     isEligible(name, phy, chem, Math);
-    getch();
+    return 0;
 }
 void isEligible(char name[20], int phy, int chem, int Math)
 {

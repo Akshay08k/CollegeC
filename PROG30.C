@@ -7,17 +7,16 @@
 #include <stdio.h>
 #include <conio.h>
 void calculateGross(char name[20], int basic);
-void main()
+int main()
 {
     char name[20];
     int basic;
-    clrscr();
     printf("Enter the name of employee : ");
     scanf("%s", name);
     printf("Enter the Basic : ");
     scanf("%d", &basic);
     calculateGross(name, basic);
-    getch();
+    return 0;
 }
 void calculateGross(char name[20], int basic)
 {

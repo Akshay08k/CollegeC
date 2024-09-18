@@ -3,16 +3,14 @@
 
 int getRightmostDigit(float num); // declaration
 
-void main()
+int main()
 {
     float num;
-    clrscr();
     printf("Enter a floating-point number: ");
     scanf("%f", &num);
     // printing the answer
     printf("The rightmost digit of the integral part is: %d\n", getRightmostDigit(num));
-
-    getch();
+    return 0;
 }
 
 // definition of function

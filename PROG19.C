@@ -3,14 +3,13 @@
 #define PI 3.14
 float convertToRad(float degrees);
 
-void main()
+int main()
 {
     float degrees;
-    clrscr();
     printf("Enter the angle in degrees: ");
     scanf("%f", &degrees);
     printf("Angle in radians: %.4f\n", convertToRad(degrees));
-    getch();
+    return 0;
 }
 
 float convertToRad(float degrees)

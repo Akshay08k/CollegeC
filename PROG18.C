@@ -2,16 +2,15 @@
 #include <conio.h>
 void convertAndPrint(float km);
 
-void main()
+int main()
 {
     float distance_km;
-    clrscr();
     printf("Enter the distance between two cities in kilometers: ");
     scanf("%f", &distance_km);
     // Call the function
     convertAndPrint(distance_km);
 
-    getch();
+    return 0;
 }
 // Function to convert and print distances
 void convertAndPrint(float km)

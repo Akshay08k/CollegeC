@@ -2,15 +2,13 @@
 #include <stdio.h>
 #include <conio.h>
 void PrintTable(int N);
-void main()
+int main()
 {
     int n;
-    clrscr();
     printf("Enter the N : ");
     scanf("%d", &n);
     PrintTable(n);
-    // return 0;
-    getch();
+    return 0;
 }
 void PrintTable(int N)
 {

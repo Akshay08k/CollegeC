@@ -3,11 +3,10 @@
 #include <conio.h>
 #include <string.h>
 void calculateGrade(int rollno, char name[30], int marks);
-void main()
+int main()
 {
     int rollno, marks;
     char name[30];
-    clrscr();
     printf("Enter the RollNo Of Student : ");
     scanf("%d", &rollno);
     printf("Enter the Name of student : ");
@@ -15,7 +14,7 @@ void main()
     printf("Enter the Marks Of Student : ");
     scanf("%d", &marks);
     calculateGrade(rollno, name, marks);
-    getch();
+    return 0;
 }
 void calculateGrade(int rollno, char name[30], int marks)
 {

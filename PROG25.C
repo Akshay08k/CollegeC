@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <conio.h>
 void arrangeNum(int a, int b, int c);
-void main()
+int main()
 {
 	int a, b, c;
-	clrscr();
 	printf("Enter 3 Number(a b c) : ");
 	scanf("%d %d %d", &a, &b, &c);
 	arrangeNum(a, b, c);
-	getch();
+	return 0;
 }
 void arrangeNum(int a, int b, int c)
 {

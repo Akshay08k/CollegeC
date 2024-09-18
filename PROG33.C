@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <conio.h>
 void calNetSalary(char name[30], int basic, int level);
-void main()
+int main()
 {
     char name[30];
     int basic, level;
@@ -18,7 +18,7 @@ void main()
     else
     {
         calNetSalary(name, basic, level);
-        getch();
+        return 0;
     }
 }
 

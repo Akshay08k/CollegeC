@@ -2,18 +2,18 @@
 #include <conio.h>
 
 float calculateWeeklyPay(float hourlyRate, int hoursWorked);
-void main()
+int main()
 {
     float hourlyRate, weeklyPay;
     int hoursWorked;
-    clrscr();
+
     printf("Enter the hourly pay rate: ");
     scanf("%f", &hourlyRate);
     printf("Enter the number of hours worked in a week: ");
     scanf("%d", &hoursWorked);
     weeklyPay = calculateWeeklyPay(hourlyRate, hoursWorked);
     printf("The weekly pay is: %.2f\n", weeklyPay);
-    getch();
+    return 0;
 }
 
 float calculateWeeklyPay(float hourlyRate, int hoursWorked)

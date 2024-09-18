@@ -2,10 +2,9 @@
 #include <stdio.h>
 #include <conio.h>
 int isPrime(int n);
-void main()
+int main()
 {
     int n;
-    clrscr();
     printf("Enter the Number : ");
     scanf("%d", &n);
     if (isPrime(n))
@@ -16,8 +15,7 @@ void main()
     {
         printf("It is not prime number");
     }
-    // return 0;
-    getch();
+    return 0;
 }
 int isPrime(int n)
 {
