@@ -14,10 +14,7 @@ int main()
             printf("* ");
         }
 
-        for (j = 1; j <= 2 * (4 - i); j++)
-        {
-            printf("  ");
-        }
+        
 
         for (j = i; j >= 1; j--)
         {

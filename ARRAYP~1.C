@@ -1,0 +1,307 @@
+// 1)Find length of string enter by user
+// 2)count no of character enter by user
+// 3)count no of vowel in given string input by user
+// 4)Replace character with another character into string
+// 5)Count no of words into given string
+// 6)convert given string into Camel Case
+// 7)Write a program to calculate(count) the total number of capital, small and special character
+// 8)Reverse string:
+// 9)Sort string
+// 10)Write a program to find character in string.
+// 11)WAP to copy one string into another string
+// 12)Compare two string
+// 13)Merge( concat) two string
+#include <stdio.h>
+#include <conio.h>
+#include <ctype.h>
+int getLength(char str[]);
+int countChar(char str[]);
+int countVowel(char str[]);
+void replaceChar(char str[], char, char);
+int countWord(char str[]);
+void convertCamelCase(char str[]);
+void countCapSmallSpecial(char str[]);
+void reverseString(char str[]);
+void sortString(char str[]); // using bubble sort by their respective ascii values(numbers)
+int findChar(char str[]);
+void copyString(char str1[], char str2[]);
+void compareString(char str1[], char str2[]);
+void mergeString(char str1[], char str2[]);
+void main()
+{
+	char str[100], str2[100], chrold, chrnew;
+	int ch;
+	printf("Enter string : ");
+	scanf("%s", str);
+	do
+	{
+		printf("\n-------------------------------------------");
+		printf("\n1..Find length of string enter by user\n");
+		printf("2..count no of character enter by user\n");
+		printf("3..count no of vowel in given string input by user\n");
+		printf("4..Replace character with another character into string\n");
+		printf("5..Count no of words into given string\n");
+		printf("6..convert given string into Camel Case\n");
+		printf("7..Write a program to calculate(count) the total number of capital, small and special character \n");
+		printf("8..Reverse string:\n");
+		printf("9..Sort string\n");
+		printf("10..Write a program to find character in string.\n");
+		printf("11..WAP to copy one string into another string\n");
+		printf("12..Compare two string\n");
+		printf("13..Merge( concat) two string\n");
+		printf("14..Exit\n");
+		printf("Enter your choice:\n");
+		scanf("%d", &ch);
+		switch (ch)
+		{
+		case 1:
+			clrscr();
+			printf("Length of string %s is =  %d", str, getLength(str));
+			break;
+		case 2:
+			clrscr();
+			printf("No of character in string %s is =  %d", str, countChar(str));
+			break;
+		case 3:
+			clrscr();
+			printf("No of vowel in string %s is =  %d", str, countVowel(str));
+			break;
+		case 4:
+			clrscr();
+			printf("Enter character you want to replace : ");
+			scanf(" %c", &chrold);
+			printf("Enter character you want to replace with : ");
+			scanf(" %c", &chrnew);
+			replaceChar(str, chrold, chrnew);
+			break;
+		case 5:
+			clrscr();
+			printf("No of words in string %s is =  %d", str, countWord(str));
+			break;
+		case 6:
+			clrscr();
+			convertCamelCase(str);
+			break;
+		case 7:
+			clrscr();
+			countCapSmallSpecial(str);
+			break;
+		case 8:
+			clrscr();
+			reverseString(str);
+			break;
+		case 9:
+			clrscr();
+			sortString(str);
+			break;
+		case 10:
+			clrscr();
+			printf("Character in string %s is =  %d", str, findChar(str));
+			break;
+		case 11:
+			clrscr();
+			printf("\nEnter Another String : ");
+			scanf("%s", str2);
+			copyString(str, str2);
+			break;
+		case 12:
+			clrscr();
+			printf("\nEnter Another String : ");
+			scanf("%s", str2);
+			compareString(str, str2);
+			break;
+		case 13:
+			clrscr();
+			printf("\nEnter Another String : ");
+			scanf("%s", str2);
+			mergeString(str, str2);
+			break;
+		case 14:
+
+			break;
+		}
+	} while (ch != 14);
+	return 0;
+	getch();
+}
+int getLength(char str[])
+{
+	int i;
+	for (i = 0; str[i] != '\0'; i++)
+	{
+	}
+	return i;
+}
+int countChar(char str[])
+{
+	int i, count = 0;
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		count++;
+		if (str[i] == ' ')
+		{
+			count--;
+		}
+	}
+	return count;
+}
+int countVowel(char str[])
+{
+	int i, count = 0;
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		if (tolower(str[i]) == 'a' || tolower(str[i]) == 'e' || tolower(str[i]) == 'i' || tolower(str[i]) == 'o' || tolower(str[i]) == 'u')
+		{
+			count++;
+		}
+	}
+	return count;
+}
+void replaceChar(char str[], char chrold, char chrnow)
+{
+	int i;
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		if (str[i] == chrold)
+		{
+			str[i] = chrnow;
+		}
+	}
+	printf("\n\tThe String after replacing all %c with %c is : %s", chrold, chrnow, str);
+}
+int countWord(char str[])
+{
+	int i, count = 1;
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		if (str[i] == ' ')
+		{
+			count++;
+		}
+	}
+	return count;
+}
+void convertCamelCase(char str[])
+{
+	int i;
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		if (str[i] == tolower(str[i]))
+		{
+			str[i] = toupper(str[i]);
+		}
+		else if (str[i] == toupper(str[i]))
+		{
+			str[i] = tolower(str[i]);
+		}
+	}
+	printf("\n\tThe CamelCase String is : %s", str);
+}
+void countCapSmallSpecial(char str[])
+{
+	int i, Caps = 0, Small = 0, Special = 0;
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		if (str[i] == toupper(str[i]))
+		{
+			Caps++;
+		}
+		else if (str[i] == tolower(str[i]))
+		{
+			Small++;
+		}
+		else
+		{
+			Special++;
+		}
+	}
+	printf("\n\tTotal number of capital letter in string %s is =  %d", str, Caps);
+	printf("\n\tTotal number of small letter in string %s is =  %d", str, Small);
+	printf("\n\tTotal number of special letter in string %s is =  %d", str, Special);
+}
+void reverseString(char str[])
+{
+	int i, j;
+	char temp;
+	for (i = 0, j = getLength(str) - 1; i < j; i++, j--)
+	{
+		temp = str[i];
+		str[i] = str[j];
+		str[j] = temp;
+	}
+	printf("\n\tThe Reverse String is : %s", str);
+}
+void sortString(char str[])
+{
+	int i, j, temp;
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		for (j = i + 1; str[j] != '\0'; j++)
+		{
+			if (str[i] > str[j])
+			{
+				temp = str[i];
+				str[i] = str[j];
+				str[j] = temp;
+			}
+		}
+	}
+	printf("\n\tThe Sorted String is : %s", str);
+}
+int findChar(char str[])
+{
+	int i, count = 0;
+	char ch;
+	printf("\n\tEnter the character you want to find : ");
+	scanf(" %c", &ch);
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		if (ch == str[i])
+		{
+			printf("\n\tThe Character %c is present at index %d", ch, i);
+			count++;
+		}
+	}
+	if (count == 0)
+	{
+		printf("\n\tThe Character %c is not present in the String", ch);
+	}
+	return count;
+}
+void copyString(char str1[], char str2[])
+{
+	int i;
+	for (i = 0; str2[i] != '\0'; i++)
+	{
+		str2[i] = str1[i];
+	}
+	printf("\n\tThe Copy String is : %s", str2);
+}
+void compareString(char str1[], char str2[])
+{
+	int i;
+	for (i = 0; str1[i] != '\0' && str2[i] != '\0'; i++)
+	{
+		if (str1[i] != str2[i])
+		{
+			printf("\n\tThe String are not equal");
+			return;
+		}
+	}
+	printf("\n\tThe String are equal");
+}
+void mergeString(char str1[], char str2[])
+{
+	int i, j;
+	char combined[100];
+	for (i = 0; str1[i] != '\0'; i++)
+	{
+		combined[i] = str1[i];
+	}
+	for (j = 0; str2[j] != '\0'; j++, i++)
+	{
+		combined[i] = str2[j];
+	}
+	combined[i] = '\0';
+	printf("\n\tThe Combined String is : %s", combined);
+}

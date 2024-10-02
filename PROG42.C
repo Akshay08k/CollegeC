@@ -13,7 +13,7 @@ void printOddFive()
 
     while (count < 50)
     {
-        printf("%d\t", number);
+        printf("%d\t", number); 
         count++;
 
         if (count % 5 == 0)

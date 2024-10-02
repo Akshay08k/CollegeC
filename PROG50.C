@@ -1,10 +1,9 @@
-/*
- * Program 50: Description of what this program does
- */
+// Write a program generate Sum of two binary numbers.
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     // Your code here
     return 0;
 }

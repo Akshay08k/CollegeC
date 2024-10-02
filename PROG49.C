@@ -1,10 +1,9 @@
-/*
- * Program 49: Description of what this program does
- */
+// To check whether the given number is valid octal or not.
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     // Your code here
     return 0;
 }
