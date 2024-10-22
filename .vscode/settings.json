@@ -119,6 +119,11 @@
     "PROG58.C": "cpp",
     "PROG57.C": "cpp",
     "PROG56.C": "cpp",
-    "ARRAYP~1.C": "cpp"
-  }
+    "ARRAYP~1.C": "cpp",
+    "struct.C": "cpp",
+    "PROG160.C": "cpp",
+    "ptr.C": "cpp",
+    "FileEvenOdd.C": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "disabled"
 }

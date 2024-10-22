@@ -148,9 +148,11 @@ int countChar(char str[])
 int countVowel(char str[])
 {
 	int i, count = 0;
+	char ch;
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (tolower(str[i]) == 'a' || tolower(str[i]) == 'e' || tolower(str[i]) == 'i' || tolower(str[i]) == 'o' || tolower(str[i]) == 'u')
+		ch = tolower(str[i]);
+		if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
 		{
 			count++;
 		}
